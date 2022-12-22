@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root{
+/* colors */
+--clr-primary: hsl(225, 100%, 94%);
+--clr-secondary-2: hsl(245, 75%, 72%);
+--clr-secondary: hsl(245, 75%, 52%);
+--clr-neutral-100:hsl(225, 100%, 98%);
+--clr-neutral-500:hsl(224, 23%, 55%);
+--clr-neutral-900:hsl(223, 47%, 23%);
+
+--fs-normal:16px;
+
+--ff-base: 'Red Hat Display', sans-serif;
+
+--fw-first:500;
+--fw-second:700;
+--fw-third:900;
+
+}
+
+
+
+
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  * {
+    margin: 0;
+  }
+
+
+
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+
+  input, button, textarea, select {
+    font: inherit;
+  }
+
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+
+  #root, #__next {
+    isolation: isolate;
+  }
+
+
+
+body{
+background-color: var(--clr-primary);
+color: var(--clr-neutral-500);
+font-family: var(--ff-base);
+font-size: var(--fs-normal);
+padding: 1.5rem;
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+text-align: center;
+align-items: center;
+}
+.product{
+    
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+   
+}
+img{
+    border-radius: 1rem 1rem 0 0;
+}
+.info{
+    font-size: 1rem;
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+border-radius: 0 0 1rem 1rem;
+
+
+}
+.title{
+color: var(--clr-neutral-900);
+font-size: 1rem;
+font-weight: var(--fw-third);
+
+}
+.desc{
+    font-weight: var(--fw-first);
+    font-size: 0.8rem;
+}
+
+.room{
+display: flex;
+justify-content: space-around;
+background-color: var(--clr-neutral-100);
+border-radius: 0.5rem;
+padding: 0.6rem;
+font-size: 0.8rem;
+align-items: center;
+
+}
+.room img{
+    width: 3rem;
+}
+.room2{
+    margin-left: -1.5rem;
+}
+.name{
+    color: var(--clr-neutral-900);
+    font-weight: var(--fw-third);
+}
+
+a:hover{
+color: var(--clr-secondary-2);
+text-decoration: none;
+cursor: pointer;
+}
+
+.button{
+    font-weight: var(--fw-second);
+background-color: var(--clr-secondary);
+border: 0;
+color: var(--clr-neutral-100);
+padding: 0.7rem;
+border-radius: 0.5rem;
+box-shadow: 0px 15px 5px var(--clr-primary);
+font-size: 0.8rem;
+
+}
+.button:hover{
+    background-color: var(--clr-secondary-2);
+    cursor: pointer;
+}
+
+.button2{
+    border: 0;
+    background-color: white;
+    color: var(--clr-neutral-500);
+    font-weight: var(--fw-second);
+    font-size: 0.8rem;
+}
+.button2:hover{
+    color: var(--clr-neutral-900);
+    cursor: pointer;
+    
+}
